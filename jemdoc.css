@@ -8,9 +8,10 @@ table#tlayout {
 
 body {
 	background: white;
-	font-family: Georgia, serif;
+	font-family: 'Open Sans', sans-serif;
 	padding-bottom: 8px;
 	margin: 0;
+	font-size: 0.9em;
 }
 
 #layout-menu {
@@ -57,7 +58,7 @@ pre, tt {
 }
 
 a, a > tt {
-	color: #224b8d;
+	color: #8d2e22;
 	text-decoration: none;
 }
 
@@ -66,11 +67,11 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
+	color: #6d0f02;
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
+	color: #bd5f52;
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -118,7 +119,7 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #bd5f52;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
@@ -166,7 +167,7 @@ div#footer {
 }
 
 div#footer a {
-	color: #80a0b0;
+	color: #b08088;
 }
 
 div#footer-text {
@@ -240,7 +241,7 @@ div.codeblock, div.infoblock {
 
 div.blocktitle {
 	font-weight: bold;
-	color: #cd7b62;
+	color: #484848;
 	margin-top: 1.2em;
 	margin-bottom: 0.1em;
 }
