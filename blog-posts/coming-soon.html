@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing myself with a distant you - Jongho Park</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7V579E233T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7V579E233T');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">Jongho Park</a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../academics.html">Research</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../misc.html">Misc</a></li>
+                    <li><a href="../Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <article class="blog-post">
+                <div class="blog-post-header">
+                    <h1>Sharing myself with a distant you</h1>
+                    <p class="subtitle">A year of writing</p>
+                    <p class="date">September 21, 2025</p>
+                </div>
+
+                <!-- Language Tabs -->
+                <div class="language-tabs">
+                    <button class="language-tab active" onclick="switchLanguage('en')">English</button>
+                    <button class="language-tab" onclick="switchLanguage('ko')">한국어</button>
+                </div>
+
+                <!-- English Content -->
+                <div id="content-en" class="language-content active">
+                    <!-- Random Photo -->
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <img src="../imgs/madison.jpeg" alt="A peaceful lake view" style="max-width: 100%; height: 500px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <p>I have a stash of writings that I've been jotting down for the past year. I'm planning to share them here sooner or later. I hope these pieces will resonate with you when I share them.</p>
+                </div>
+
+                <!-- Korean Content -->
+                <div id="content-ko" class="language-content">
+                    <!-- Random Photo -->
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <img src="../imgs/madison.jpeg" alt="A peaceful lake view" style="max-width: 100%; height: 500px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <p>지난 1년 동안 많은 경험들을 해왔고 여러 생각들을 적어왔습니다. 그리 정돈이 된 글들은 아닐테지만 공유한다는 것에 의의를 두려합니다. 한국어 영어 버젼 2가지가 있지만 완벽하게 일대일 대응은 되지 않을 것이니 염두에 두세요.</p>
+                </div>
+
+                <!-- Navigation -->
+                <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+                    <a href="../blog.html" style="color: #3182ce; text-decoration: none; font-weight: 500;">← Back to Blog</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Page updated 2025-01-27.</p>
+        </div>
+    </footer>
+
+    <!-- Language Switching Script -->
+    <script>
+        function switchLanguage(lang) {
+            // Update button states
+            document.querySelectorAll('.language-tab').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+            
+            // Hide all content
+            document.querySelectorAll('.language-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected content
+            document.getElementById(`content-${lang}`).classList.add('active');
+        }
+    </script>
+</body>
+</html>

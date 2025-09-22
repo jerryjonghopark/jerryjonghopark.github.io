@@ -1,58 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V579E233T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7V579E233T');
-</script>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Jongho Park (박종호)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jongho Park (박종호)</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7V579E233T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7V579E233T');
+    </script>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Jongho Park</div>
-<div class="menu-item"><a href="index.html" class="current">home</a></div>
-<div class="menu-item"><a href="academics.html">research</a></div>
-<div class="menu-item"><a href="Resume.pdf">resume</a></div>
-<div class="menu-item"><a href="misc.html">misc</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Jongho Park (박종호)</h1>
-</div>
-<table class="imgtable"><tr><td>
-<img src="pic.jpg" alt="image of jongho" width="300px" />&nbsp;</td>
-<td align="left"><p>PhD Student <br />
-<a href="https://www.eecs.berkeley.edu/">UC Berkeley EECS</a> <br />
-<a href="https://bair.berkeley.edu/">Berkeley AI Research (BAIR)</a> <br />
-<br /></p>
-</td></tr></table>
-<h2>about me</h2>
-<p>I am a PhD student in EECS at UC Berkeley advised by <a href="https://jasondlee88.github.io/">Jason Lee</a> and <a href="https://www.stat.berkeley.edu/~songmei/">Song Mei</a>. My research focuses on the union of generative models and deep learning theory. I'm driven by fundamental questions about why machines learn the way they do and the motivations behind the paradigms we've developed (if existent at all). I like to think about the empirical, the theoretical, and the often neglected sociological components of ML.</p>
-<h2>about my past</h2>
-<p>Before GPT-5, I was leading the core research team at <a href="https://www.krafton.ai/en/">Krafton AI</a> under <a href="https://kangwooklee.com/">Kangwook Lee</a> and fulfilled my military service there as well. We deployed some cool on-device AI into <a href="https://playinzoi.com/en">our games</a>! Also did some fun research with <a href="https://papail.io/">Dimitris Papailiopoulos</a>. If you are an undergrad and want to work in Seoul over the summer while earning a scholarship, consider applying to Krafton's <a href="https://www.krafton.ai/en/career/ai-fellowship/">AI Fellowship</a>!</p>
-<p>Before GPT-3.5, I received my M.S. at UW-Madison where I developed some mathematical maturity working on efficient algorithms for high dimensional robust statistics with <a href="https://tzamos.com/">Christos Tzamos</a> and <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>.</p>
-<p>Before GPT-3, I graduated from UC Berkeley with a B.A. in Computer Science and Mathematics with high honors and was fortunate to work with <a href="http://people.ischool.berkeley.edu/~dbamman/">David Bamman</a>.</p>
-<h2>contact</h2>
-<p>You can email me at jjhpark {at} berkeley {dot} edu.</p>
-<p>I am more than happy to discuss research. If you are an undergrad contemplating research or career decisions, I can give you my two cents as someone who was in both industry and academia. Forgive me if I take some time to reply though. If you are a Korean male undergrad contemplating about military service, it's probably best to go during your undergrad.</p>
-<div id="footer">
-<div id="footer-text">
-Page updated 2025-09-02.
-</div>
-</div>
-</td>
-</tr>
-</table>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Jongho Park</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="academics.html">Research</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="misc.html">Misc</a></li>
+                    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <img src="pic.jpg" alt="Jongho Park" class="hero-image">
+                    <div class="hero-text">
+                        <h1>Jongho Park <span class="korean-name">(박종호)</span></h1>
+                        <p class="subtitle">PhD Student at UC Berkeley EECS</p>
+                        <p class="intro-text">I am a first year PhD student in UC Berkeley EECS advised by <a href="https://jasondlee88.github.io/">Jason Lee</a> and <a href="https://www.stat.berkeley.edu/~songmei/">Song Mei</a>. My research focuses on the union of generative models and deep learning theory. I'm driven by fundamental questions about why machines learn the way they do and the motivations behind the paradigms we've developed (if existent at all). I like to think about the empirical, the theoretical, and the sociological components of ML.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About My Past Section -->
+            <section class="section">
+                <h2>in the past</h2>
+                <p>Before GPT-5, I was leading the core research team at <a href="https://www.krafton.ai/en/">Krafton AI</a> under <a href="https://kangwooklee.com/">Kangwook Lee</a> and fulfilled my military service there as well. We deployed some cool on-device AI into <a href="https://playinzoi.com/en">our games</a>! Also did some fun research with <a href="https://papail.io/">Dimitris Papailiopoulos</a>. If you are an undergrad and want to work in Seoul over the summer while earning a scholarship, consider applying to Krafton's <a href="https://www.krafton.ai/en/career/ai-fellowship/">AI Fellowship</a>!</p>
+                <p>Before GPT-3.5, I received my M.S. at UW-Madison where I developed some mathematical maturity working on efficient algorithms for high dimensional robust statistics with <a href="https://tzamos.com/">Christos Tzamos</a> and <a href="http://www.iliasdiakonikolas.org/">Ilias Diakonikolas</a>.</p>
+                <p>Before GPT-3, I graduated from UC Berkeley with a B.A. in Computer Science and Mathematics with high honors and was fortunate to work with <a href="http://people.ischool.berkeley.edu/~dbamman/">David Bamman</a>.</p>
+                
+                <h2>contact</h2>
+                <p>You can email me at <a href="mailto:jjhpark@berkeley.edu">jjhpark@berkeley.edu</a>.</p>
+                <p>I am more than happy to discuss research. If you are an undergrad contemplating research or career decisions, I can give you my two cents as someone who was in both industry and academia. Forgive me if I take some time to reply though. If you are a Korean male undergrad contemplating about military service, it's probably best to go during your undergrad.</p>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
