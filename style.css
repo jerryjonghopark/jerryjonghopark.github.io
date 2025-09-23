@@ -192,6 +192,13 @@ body {
 .icon-badge.x,
 .icon-badge.linkedin { background: transparent; color: #2d3748; border-color: #2d3748; }
 
+/* Ensure inline SVG icons inherit currentColor and scale nicely */
+.icon-badge .icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
 /* Match intro text font size for selected paragraphs */
 .match-intro-size {
     font-size: 1.0rem;
@@ -866,6 +873,10 @@ a:hover {
         height: 32px;
         font-size: 14px;
     }
+    .icon-badge .icon {
+        width: 18px;
+        height: 18px;
+    }
     
     /* Main content adjustments */
     .main {
@@ -936,6 +947,10 @@ a:hover {
         width: 32px;
         height: 32px;
         font-size: 14px;
+    }
+    .icon-badge .icon {
+        width: 18px;
+        height: 18px;
     }
     
     .section h2 {
