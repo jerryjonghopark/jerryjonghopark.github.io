@@ -173,21 +173,24 @@ body {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
-    color: #fff;
-    background: #4a5568; /* fallback */
-    transition: transform 0.15s ease, opacity 0.2s ease;
+    color: #2d3748;
+    background: transparent;
+    border: 1.5px solid #2d3748;
+    transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .icon-badge:hover {
     transform: translateY(-1px);
-    opacity: 0.9;
+    background: #2d3748;
+    color: #fff;
 }
 
-.icon-badge.scholar { background: #4285F4; }
-.icon-badge.x { background: #000; color: #fff; }
-.icon-badge.linkedin { background: #0A66C2; }
+/* Remove brand colors for monochrome look */
+.icon-badge.scholar,
+.icon-badge.x,
+.icon-badge.linkedin { background: transparent; color: #2d3748; border-color: #2d3748; }
 
 /* Match intro text font size for selected paragraphs */
 .match-intro-size {
@@ -861,7 +864,7 @@ a:hover {
     .icon-badge {
         width: 32px;
         height: 32px;
-        font-size: 16px;
+        font-size: 14px;
     }
     
     /* Main content adjustments */
@@ -932,7 +935,7 @@ a:hover {
     .icon-badge {
         width: 32px;
         height: 32px;
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .section h2 {
