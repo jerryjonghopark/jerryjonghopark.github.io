@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research - Jongho Park</title>
     
+    <!-- Bear emoji favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐻</text></svg>">
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
@@ -26,12 +29,19 @@
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">Jongho Park</a>
-                <ul class="nav-menu">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="academics.html" class="active">Research</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="misc.html">Misc</a></li>
-                    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="Resume.pdf" target="_blank">CV</a></li>
                 </ul>
             </nav>
         </div>
@@ -230,6 +240,38 @@
         // Initialize years on page load
         document.addEventListener('DOMContentLoaded', function() {
             assignYearsToVisiblePublications();
+        });
+        
+        // Mobile menu functionality
+        function toggleMobileMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            
+            navMenu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('nav-menu');
+                const toggle = document.querySelector('.mobile-menu-toggle');
+                
+                navMenu.classList.remove('active');
+                toggle.classList.remove('active');
+            });
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            const nav = document.querySelector('.nav');
+            const navMenu = document.getElementById('nav-menu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!nav.contains(event.target) && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                toggle.classList.remove('active');
+            }
         });
     </script>
 </body>
