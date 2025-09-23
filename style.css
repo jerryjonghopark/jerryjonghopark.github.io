@@ -154,6 +154,41 @@ body {
     max-width: 600px;
 }
 
+/* Social links next to intro */
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.25rem 0 0.75rem;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.icon-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: #4a5568; /* fallback */
+    transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.icon-badge:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.icon-badge.scholar { background: #4285F4; }
+.icon-badge.x { background: #000; color: #fff; }
+.icon-badge.linkedin { background: #0A66C2; }
+
 /* Match intro text font size for selected paragraphs */
 .match-intro-size {
     font-size: 1.0rem;
@@ -822,6 +857,12 @@ a:hover {
     .match-intro-size {
         font-size: 0.95rem;
     }
+
+    .icon-badge {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
     
     /* Main content adjustments */
     .main {
@@ -886,6 +927,12 @@ a:hover {
     
     .match-intro-size {
         font-size: 0.9rem;
+    }
+
+    .icon-badge {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
     }
     
     .section h2 {
