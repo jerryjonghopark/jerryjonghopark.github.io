@@ -52,8 +52,8 @@
         <div class="container">
             <section class="section research-section">
                 <h2>Publications<span class="filter-buttons">
-                    <button class="filter-button active" onclick="filterPublications('all')">all</button>
-                    <button class="filter-button" onclick="filterPublications('selected')">selected</button>
+                    <button class="filter-button active" onclick="filterPublications('selected')">selected</button>
+                    <button class="filter-button" onclick="filterPublications('all')">all</button>
                 </span></h2>
                 <p><em>* denotes equal contribution. Authorship in robust statistics works is in alphabetical order.</em></p>
                 
@@ -259,6 +259,8 @@
         // Initialize years on page load
         document.addEventListener('DOMContentLoaded', function() {
             assignYearsToVisiblePublications();
+            // NEW: default to "selected"
+            document.querySelector('.filter-button[onclick*="selected"]').click();
         });
         
         // Mobile menu functionality
