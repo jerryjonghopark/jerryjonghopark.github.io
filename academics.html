@@ -58,18 +58,35 @@
                 <p><em>* denotes equal contribution. Authorship in robust statistics works is in alphabetical order.</em></p>
                 
                 <h3>Language Models</h3>
-                
+
                 <div class="publication selected">
-                    <span class="publication-year">2025</span>
-                    <h4><a href="https://arxiv.org/abs/2507.00726">Can Large Language Models Develop Strategic Reasoning? Post-training Insights from Learning Chess</a></h4>
-                    <p class="authors">Dongyoon Hwang, Hojoon Lee, Jaegul Choo, Dongmin Park*, <strong>JHP</strong>*</p>
-                    <p class="venue"><em>ScalR workshop at COLM 2025.</em></p>
+                    <h4><a href="https://arxiv.org/abs/2510.10964">Not All Bits Are Equal: Scale-Dependent Memory Optimization Strategies for Reasoning Models</a></h4>
+                    <p class="authors">Junhyuck Kim, Ethan Ewer, Taehong Moon, <strong>JHP</strong>, Dimitris Papailiopoulos</p>
+                    <p class="venue"><em>Under review. ER workshop at NeurIPS 2025 (spotlight).</em></p>
+                </div>
+
+                <div class="publication">
+                    <h4><a href="https://arxiv.org/abs/2511.05562">Effective Test-Time Scaling of Discrete Diffusion through Iterative Refinement</a></h4>
+                    <p class="authors">Sanghyun Lee, Sunwoo Kim, Seungryong Kim, <strong>JHP</strong>, Dongmin Park</p>
+                    <p class="venue"><em>Under review.</em></p>
+                </div>
+
+                <div class="publication">
+                    <h4><a href="https://arxiv.org/abs/2506.01523">Lookahead Unmasking Elicits Accurate Decoding in Diffusion Language</a></h4>
+                    <p class="authors">Sanghyun Lee, Seungryong Kim, <strong>JHP</strong>, Dongmin Park</p>
+                    <p class="venue"><em>Under review.</em></p>
                 </div>
 
                 <div class="publication">
                     <h4><a href="https://arxiv.org/abs/2506.01523">Alignment as Distribution Learning: Your Preference Model is Explicitly a Language Model</a></h4>
                     <p class="authors">Jihun Yun*, Juno Kim*, <strong>JHP</strong>, Jongha Jon Ryu, Junhyuck Kim, Jaewoong Cho, Kwang-Sung Jun</p>
-                    <p class="venue"><em>FoPT workshop at COLT 2025.</em></p>
+                    <p class="venue"><em>Under review. FoPT workshop at COLT 2025.</em></p>
+                </div>
+                
+                <div class="publication selected">
+                    <h4><a href="https://arxiv.org/abs/2507.00726">Can Large Language Models Develop Strategic Reasoning? Post-training Insights from Learning Chess</a></h4>
+                    <p class="authors">Dongyoon Hwang, Hojoon Lee, Jaegul Choo, Dongmin Park, <strong>JHP</strong></p>
+                    <p class="venue"><em>ScalR workshop at COLM 2025.</em></p>
                 </div>
 
                 <div class="publication">
@@ -85,7 +102,6 @@
                 </div>
 
                 <div class="publication selected">
-                    <span class="publication-year">2024</span>
                     <h4><a href="https://arxiv.org/abs/2402.04248">Can Mamba Learn How to Learn? A Comparative Study on In-Context Learning Tasks</a></h4>
                     <p class="authors"><strong>JHP</strong>, Jaeseung Park, Zheyang Xiong, Nayoung Lee, Jaewoong Cho, Samet Oymak, Kangwook Lee, Dimitris Papailiopoulos</p>
                     <p class="venue"><em>ICML 2024.</em></p>
@@ -121,7 +137,6 @@
                 </div>
 
                 <div class="publication selected">
-                    <span class="publication-year">2021</span>
                     <h4><a href="https://arxiv.org/abs/2109.04623">ReLU Regression with Massart Noise</a></h4>
                     <p class="authors">Ilias Diakonikolas, <strong>JHP</strong>, Christos Tzamos</p>
                     <p class="venue"><em>NeurIPS 2021.</em></p>
@@ -211,8 +226,12 @@
                 // Group by year within this section
                 const yearGroups = {};
                 sectionPublications.forEach(pub => {
-                    // Extract year from venue text
+                    // Skip publications that are "Under review"
                     const venueText = pub.querySelector('.venue').textContent;
+                    if (venueText.includes('Under review')) {
+                        return; // Skip this publication
+                    }
+                    // Extract year from venue text
                     const yearMatch = venueText.match(/\b(20\d{2})\b/);
                     if (yearMatch) {
                         const year = yearMatch[1];
