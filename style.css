@@ -107,7 +107,7 @@ body {
 }
 
 .hero-image {
-    width: 250px;
+    width: 280px;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -838,7 +838,7 @@ a:hover {
     }
     
     .hero-image {
-        width: 300px; /* Bigger image on mobile with hamburger menu */
+        width: 320px; /* Bigger image on mobile with hamburger menu */
         align-self: center;
     }
     
@@ -919,7 +919,7 @@ a:hover {
     }
     
     .hero-image {
-        width: 220px; /* Keep image reasonably large on small screens */
+        width: 240px; /* Keep image reasonably large on small screens */
     }
     
     .hero-text h1 {
@@ -982,7 +982,7 @@ a:hover {
     }
     
     .hero-image {
-        width: 200px; /* Keep image substantial even on tiny screens */
+        width: 220px; /* Keep image substantial even on tiny screens */
     }
     
     .hero-text h1 {
